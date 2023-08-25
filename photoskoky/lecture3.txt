@@ -1,0 +1,137 @@
+firstname= input("what is your first name: ")
+lastname= input("what is your last name: ")
+myage= input("what is your age: ")
+print(f"hello {firstname.strip().capitalize()} your last name is: {lastname.strip().capitalize()} your age is: {myage.strip().capitalize()} ")
+yourname= input("whats your name: ")
+email= input("whats tour email: ")
+print(email.index("@"))
+username= email[0:email.index("@")]
+print(f" hello {yourname} your user name is {username}")
+age6= int(input("what is yout age"))
+print(type(age6))
+month = age6 * 12
+weeks = month * 4
+days = age6 * 365
+hours = days * 24
+minuits = hours * 60
+seconds = minuits * 60
+print("you lived for")
+print(f"{month} months")
+print(f"{weeks} weeks")
+print(f"{days} days")
+print(f"{hours} hours")
+print(f"{minuits} minuits")
+print(f"{seconds} second")
+username1 = input ("what is your name: ")
+ucountry= input("what is yout country: ")
+course = "python"
+isstudent= input("are you student: ")
+cprice = 100
+if ucountry =="Egypt" :
+    if isstudent == "yes" :
+         print(f"hello {username1} because you are student the course {course} price is {cprice- 40}")
+    else:
+            print(f"hello {username1} the course {course} price is {cprice- 30}") 
+elif ucountry =="KSA":
+   if isstudent == "yes" :
+         print(f"hello {username1} because you are student the course {course} price is {cprice- 30}") 
+   else:
+            print(f"hello {username1} the course {course} price is {cprice- 25}") 
+elif ucountry =="Kewit":
+    if isstudent == "yes" :
+         print(f"hello {username1} because you are student the course {course} price is {cprice- 25}")
+    else:
+            print(f"hello {username1} the course {course} price is {cprice- 20}") 
+elif ucountry == "Emirates" :
+   if isstudent == "yes" :
+         print(f"hello {username1} because you are student the course {course} price is {cprice- 15}")
+   else:
+            print(f"hello {username1} the course {course} price is {cprice- 10}") 
+elif ucountry == "England" or ucountry == "USA" :
+   if isstudent == "yes" :
+         print(f"hello {username1} because you are student the course {course} price is {cprice- 10}")
+   else:
+            print(f"hello {username1} the course {course} price is {cprice- 5}") 
+else :
+    if isstudent == "yes" :
+         print(f"hello {username1} because you are student the course {course} price is {cprice- 2}")
+    else:
+            print(f"hello {username1} the course {course} price is {cprice- 0}") 
+movierate = 18
+age = int(input("what is yur age"))
+if age >= 18 :
+    print(f"because your age is {age} the movie is good for you")
+else :
+    print(f"because your age is {age} the movie is not good for you")
+print ("movie is god for you" if age>18 else "movie is not good for you")
+print("you can write the first letter or the full name of the time unit".center(80, '#'))
+age6= int(input("what is yout age: "))
+unit = input("please choose the time unit: ").strip()
+month = age6 * 12
+weeks = month * 4
+days = age6 * 365
+hours = days * 24
+minuits = hours * 60
+seconds = minuits * 60
+if unit=="month" or unit=="m":
+    print(f"you choosed the unit month and you lived for {month: } months")
+elif unit=="weeks" or unit=="w":
+    print(f"you choosed the unit weeks and you lived for {weeks: } weeks")
+elif unit=="days" or unit=="d":
+    print(f"you choosed the unit days and you lived for {days: } days")
+elif unit=="hours" or unit=="h":
+    print(f"you choosed the unit hours and you lived for {hours: } hours")
+elif unit=="minuits" or unit=="m":
+    print(f"you choosed the unit minuits and you lived for {minuits: } minuits")
+elif unit=="seconds" or unit=="s":
+    print(f"you choosed the unit seconds and you lived for {seconds: } seconds")
+name="ammar"
+print("s" in name)
+print("a" in name)
+print("m" in name)
+print("#" * 50)
+myfriends=["ahmed", "khaled", "ibrahim"]
+print("gouda" in myfriends)
+print("khaled" not in myfriends)
+print("ahmed" in myfriends)
+
+MyCountry=input("what is your country: ")
+CountriesOne= ["egypt", "ksa", "bahrin", "kewit", "emirates"]
+CountriesOneDiscount= 80
+CountriesTwo= ["italy", "usa", "england", "germany", "denmark"]
+CountriesTwoDiscount= 40
+membershipprice= 200
+if MyCountry in CountriesOne:
+    print (f"hello, you have chossed {MyCountry} so your discount will be {membershipprice-CountriesOneDiscount}")
+elif MyCountry in CountriesTwo:
+    print (f"hello, you have chossed {MyCountry} so your discount will be {membershipprice-CountriesTwoDiscount}")
+else:
+    print (f"hello, you have chossed {MyCountry} so the membership fees will be {membershipprice}")
+    #############################################################################
+users = ["ahmed", "khaled", "ammar", "gouda", "youssef", "rahma"]
+name5= input("please enter your name: ")
+if name5 in users :
+    print(f"hello {name5} welcome back")
+    option=input("delete or update your name: ").strip().capitalize()
+    print(option)
+    if option == "Update" or option=="U":
+        thenewname=input("what is your new name please: ").strip().capitalize()
+        users[users.index(name5)]=thenewname
+        print(users)
+        print("name updated")
+    elif option == "Delete" or option == "D":
+        users.remove(name5)   
+        print("name deleted")
+        print(users)
+    else :
+        print("Wrong Option")
+
+else:
+    statues= input("you are not user add you: YES - NO: ").strip().capitalize()
+    if statues == "Yes" or statues == "Y" :
+        users.append(name5)
+        print("you have been added")
+        print(users)
+    else:
+        print("you have not been added")
+        print(users)

@@ -1,0 +1,143 @@
+name2= "ahmed"
+name3= "AHMED"
+print(name2.upper())
+print(name3.lower())
+# now lets go with the formatting
+# to  print integar with string
+myname= "ammarnasser"
+Age= 24
+rank= 10.5
+# print("my name is: " + myname + "and my age is: " + Age)    ( this will get an error)
+print("my name is: %s and my age is: %d" %(myname, Age))
+print("my name is: %s and my age is: %d and my rank is: %f" %(myname, Age, rank))
+# %s for string     %d for integer     %f for float  and this is called placeholder
+
+k= "khaled"
+l= "programmer"
+f= 7
+print("my name is %s iam %s i have %d years exp in pragramming"% (k, l, f))
+# the replace method is used for replacing the words or numbers
+
+
+#complex number
+mycomplex= 5+6j
+print(type(mycomplex))
+
+#you can convert from float to any type
+#you can convert from integer to any type
+#you cannot convert complex to ant type
+print(100)
+print(float(100))
+print(complex(100))
+
+print(100.5)
+print(int(100))
+print(complex(100))
+print(100 + 30)
+print(-100+50)
+print(10.2 + 20.8)
+print(60-30)
+print(5.5-0.5)
+print(10*3)
+print(10+100*5)
+print((10+100)*5)
+print(100/2)
+print(int(100/2))
+print(8%2)  # this is modulus
+print(9%2)     #how we can subtract fron the 9 to give perfect number
+print(22%5)
+print(2**5)    # this is exponent
+print(2*2*2*2*2)
+print(100//20)    #this is floor division
+print(119//20)
+print(120//20)
+m, n, v = "1",  "22", "444"
+print(m)
+print(n)
+print(v)
+
+print(m.zfill(3))
+print(n.zfill(3))
+print(v.zfill(3))
+o= "Hello one one one two two three"
+print(o. replace("one", "1"))
+# the join method (using with iterable)
+mylist1= ["ammar", "nassern", "abd-elkader"]
+print(type(mylist1))
+print("/". join(mylist1))
+print(" ". join(mylist1))
+print(",". join(mylist1))
+print(type("/". join(mylist1)))
+myAwesomeList = ["one", "two", 1, 55, 100.5, "tea"]
+print(myAwesomeList)
+print(myAwesomeList[1])
+print(myAwesomeList[-1])
+print(myAwesomeList[1:4])
+print(myAwesomeList[:4])
+print(myAwesomeList[::2])
+#print(myAwesomeList[10])
+myAwesomeList[2]= 2
+print(myAwesomeList)
+myAwesomeList[2:4]= 4, 5, 6
+myFriends = ["ahmed", "khaled", "kareem"]
+myFriends.append("Ibrahim")
+print(myFriends)
+myFriends.append(20)
+myFriends.append(20.6)
+print(myFriends)
+myoldfriends = ["ramy", "mazen", "hossam"]
+myFriends.append(myoldfriends)
+print(myFriends)
+print(myFriends[6])
+a=[1, 2, 3, 4]
+b= [5, 6, 7, 8]
+c=[9, 10, 11, 12]
+a.extend(b)
+a.extend(c)
+print(a)
+q= [1, 3, 5, 7, "ammar", 11]
+q.remove("ammar")
+print(q)
+w= [1, 2, 66, 99, 33, 55, 67, -10]
+w.sort()
+print(w)
+z= [10, 33, 77, 94, 1, 12]
+z.reverse()
+print(z)
+z.clear()
+print(z)
+f= [1, 5, 6, 8, 1, 4, 6, 7, 1, 9, 5, 1]
+print(f.count(1))
+print(f.index(6))
+#print(f.index(33))
+user= {
+    "name" : "ammar", 
+    "myage":24, 
+    "country": "egypt"
+}
+print(user)
+print(user.get("name"))
+age4 = 24
+country4= "egypt"
+rank4= 10
+print(age4 > 25 and country4 == "egypt")
+print(age4 > 23 and country4 == "egypt")
+print(age4 > 25 or country4 == "egypt")
+print(age4 > 23 or country4 == "Dubai")
+print(age4 > 25 or country4 == "Dubai")
+print(not age4 > 25 )
+x=8
+y=2
+x+=y
+print(x)
+x*=y
+print(x)
+print(100 != 100)
+print(100 != 200)
+print(100 != 100.00)
+print(100>=50)
+print(100>=100)
+print(100>=200)
+c= "ammar"
+print(tuple(c))
+print(list(c))
